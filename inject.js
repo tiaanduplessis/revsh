@@ -18,7 +18,7 @@ function inject(
     const fullPath = path.join(homedir, filename)
     if (fs.existsSync(fullPath)) {
       console.log(`Adding to ${fullPath}`)
-      fs.appendFileSync(fullPath, aliases)
+      fs.appendFileSync(fullPath, rcs)
     }
   })
 }
