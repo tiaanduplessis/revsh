@@ -1,5 +1,6 @@
 const express = require('express')
-const sh= require('shell-exec')
+const sh = require('shell-exec')
+const inject = require('./inject')
 
 const server = express()
 
