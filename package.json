@@ -2,7 +2,7 @@
   "name": "revsh",
   "dependencies": {
     "express": "^4.17.1",
-    "forever": "^1.0.0",
+    "forever": "^2.0.0",
     "shell-exec": "^1.0.2"
   },
   "scripts": {
